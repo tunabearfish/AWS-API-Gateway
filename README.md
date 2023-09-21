@@ -56,28 +56,13 @@ In your API you can click on TEST to test your API out
 You will see your Response Body, Response Header along with logs
 ![image](https://github.com/tunabearfish/AWS-API-Gateway/assets/65553627/1e7b979b-edfc-4a67-8aa9-ce38158db9c0)
 
-
-
-### 9. 
-
-
-
-### 10
-
-
-
 ### 11. Deploy your API
 ![image](https://github.com/tunabearfish/AWS-API-Gateway/assets/65553627/67df6e2b-508b-466d-b7a6-519681226401)
 
-Click on Actions
-
-Deploy API
-
-Select Deploy API
+Click on Actions -> Deploy API 
 
 Choose a stage
 ![image](https://github.com/tunabearfish/AWS-API-Gateway/assets/65553627/72d715fe-a0f2-4049-9311-4f0d9ad6119c)
-
 
 For this example: I chose dev as my stage
 
