@@ -1,5 +1,6 @@
 ## 📝 Prerequisites
   - Have an active AWS account
+  - Existing Lambda Function
 
 
 ## 🛠 Set up
@@ -34,12 +35,29 @@ For each resource, create HTTP methods (GET, POST, PUT, DELETE, etc.) to define 
 Click on Actions and for this example we will use GET
 
 
-### 6.
+### 6. Define Integration
+![image](https://github.com/tunabearfish/AWS-API-Gateway/assets/65553627/6182450c-9453-4f8d-9684-b6c46b993856)
+For each method, configure the integration with your backend service. This can be Lambda functions, EC2 instances, or other AWS services.
+
+For this example: My integration type is " Lambda Function" I will be using Lambda Proxy Integration, My Region is "us-east-1" and I have made a Lambda Function " lambda-api-gateway-proxy-root-get" and I will be using the default Timeout(29 seconds)
+
+Then hit save
 
 
 
-### 7.
-### 8.
+### 7. Ensure your Lambda Permissions are correct
+Go to your Lambda Function and select Permissions and scroll down then you can see if you have the apigateway.amazonaws.com principal
+![image](https://github.com/tunabearfish/AWS-API-Gateway/assets/65553627/3c9c45b4-2990-42be-943f-fc91e432508e)
+
+### 8. Test your API
+In your API you can click on TEST to test your API out
+![image](https://github.com/tunabearfish/AWS-API-Gateway/assets/65553627/3ab34e56-0eb7-4125-b5af-f1688fea52de)
+
+You will see your Response Body, Response Header along with logs
+![image](https://github.com/tunabearfish/AWS-API-Gateway/assets/65553627/1e7b979b-edfc-4a67-8aa9-ce38158db9c0)
+
+
+
 ### 9. 
 
 
@@ -48,7 +66,22 @@ Click on Actions and for this example we will use GET
 
 
 
-### 11. 
+### 11. Deploy your API
+![image](https://github.com/tunabearfish/AWS-API-Gateway/assets/65553627/67df6e2b-508b-466d-b7a6-519681226401)
+
+Click on Actions
+
+Deploy API
+
+Select Deploy API
+
+Choose a stage
+![image](https://github.com/tunabearfish/AWS-API-Gateway/assets/65553627/72d715fe-a0f2-4049-9311-4f0d9ad6119c)
+
+
+For this example: I chose dev as my stage
+
+Congrats you just deployed your first REST API on API Gateway 
 
 
 
